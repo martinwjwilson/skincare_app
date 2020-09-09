@@ -7,7 +7,7 @@ class Category {
 
   String categoryName;
   Color categoryColour;
-// Image categoryImage;
+  // Image categorySplashImage;
 }
 
 class CategoryHandler {
