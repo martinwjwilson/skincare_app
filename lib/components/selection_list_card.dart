@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class SelectionListCard extends StatelessWidget {
   SelectionListCard(
-      {@required this.colour, @required this.displayText, this.onPress});
+      {@required this.displayText, @required this.colour, this.onPress});
 
-  final Color colour;
   final String displayText;
+  final Color colour;
   final Function onPress;
 
   @override
