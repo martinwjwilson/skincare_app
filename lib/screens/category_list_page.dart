@@ -14,7 +14,8 @@ class _CategoryListPageState extends State<CategoryListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Skincare App'),
+        backgroundColor: Color(0xFFE1BEE7),
+        title: Center(child: Text('Skincare App')),
       ),
       body: new ListView.builder(
         itemCount: CategoryHandler().getCategoryListLength(),
@@ -22,6 +23,11 @@ class _CategoryListPageState extends State<CategoryListPage> {
           return new SelectionListCard(
             colour: CategoryHandler().getCategoryColour(index),
             displayText: CategoryHandler().getCategoryName(index),
+            onPress: () {
+              setState(() {
+                print(CategoryHandler().getCategoryName(index));
+              });
+            },
           );
         },
       ),
