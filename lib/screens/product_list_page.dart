@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:skincare_app/components/selection_list_card.dart';
+import 'package:skincare_app/product.dart';
 
 class ProductListPage extends StatefulWidget {
   @override
@@ -14,17 +15,17 @@ class _ProductListPageState extends State<ProductListPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFFE1BEE7),
-        title: Center(child: Text('Skincare App')),
+        title: Center(child: Text('Product List')),
       ),
       body: new ListView.builder(
-        itemCount: CategoryHandler().getCategoryListLength(),
+        itemCount: ProductHandler().getProductListLength(),
         itemBuilder: (BuildContext ctxt, int index) {
           return new SelectionListCard(
-            colour: CategoryHandler().getCategoryColour(index),
-            displayText: CategoryHandler().getCategoryName(index),
+            colour: ProductHandler().getProductColour(index),
+            displayText: ProductHandler().getProductName(index),
             onPress: () {
               setState(() {
-                print(CategoryHandler().getCategoryName(index));
+                print(ProductHandler().getProductName(index));
               });
             },
           );

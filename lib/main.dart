@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/category_list_page.dart';
+import 'package:skincare_app/screens/product_list_page.dart';
+import 'package:skincare_app/screens/category_list_page.dart';
 
 void main() {
   runApp(MyApp());
