@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:skincare_app/components/selection_list_card.dart';
 import 'package:skincare_app/category.dart';
+import 'package:skincare_app/screens/product_list_page.dart';
 
 class CategoryListPage extends StatefulWidget {
   @override
@@ -24,9 +25,14 @@ class _CategoryListPageState extends State<CategoryListPage> {
             colour: CategoryHandler().getCategoryColour(index),
             displayText: CategoryHandler().getCategoryName(index),
             onPress: () {
-              setState(() {
-                print(CategoryHandler().getCategoryName(index));
-              });
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return ProductListPage();
+                  },
+                ),
+              );
             },
           );
         },
