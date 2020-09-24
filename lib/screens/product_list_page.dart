@@ -21,20 +21,24 @@ class _ProductListPageState extends State<ProductListPage> {
 
   @override
   Widget build(BuildContext context) {
+    // get a list of products to display based on the chosen category
+    List<Product> productList =
+        ProductHandler().getProductsMatchingChosenCategory(chosenCategory);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFFE1BEE7),
         title: Center(child: Text(chosenCategory)),
       ),
       body: ListView.builder(
-        itemCount: ProductHandler().getProductListLength(),
+        itemCount: productList.length,
         itemBuilder: (BuildContext ctxt, int index) {
           return new SelectionListCard(
-            colour: ProductHandler().getProductColour(index),
-            displayText: ProductHandler().getProductName(index),
+            colour: productList[index].productColour,
+            displayText: productList[index].productName,
             onPress: () {
               setState(() {
-                print(ProductHandler().getProductName(index));
+                print(productList[index].productName);
               });
             },
           );

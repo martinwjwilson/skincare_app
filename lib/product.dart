@@ -33,6 +33,16 @@ class ProductHandler {
     return _productList.length;
   }
 
+  List<Product> getProductsMatchingChosenCategory(chosenCategory) {
+    List<Product> returnList = [];
+    for (Product product in _productList) {
+      if (product.categoryName == chosenCategory) {
+        returnList.add(product);
+      }
+    }
+    return (returnList);
+  }
+
   List<Product> _productList = [
     Product(
         productName: 'Product 1',
