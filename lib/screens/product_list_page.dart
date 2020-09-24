@@ -17,7 +17,7 @@ class _ProductListPageState extends State<ProductListPage> {
         backgroundColor: Color(0xFFE1BEE7),
         title: Center(child: Text('Product List')),
       ),
-      body: new ListView.builder(
+      body: ListView.builder(
         itemCount: ProductHandler().getProductListLength(),
         itemBuilder: (BuildContext ctxt, int index) {
           return new SelectionListCard(
