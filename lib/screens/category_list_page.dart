@@ -29,7 +29,9 @@ class _CategoryListPageState extends State<CategoryListPage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return ProductListPage();
+                    return ProductListPage(
+                      chosenCategory: CategoryHandler().getCategoryName(index),
+                    );
                   },
                 ),
               );
