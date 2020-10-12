@@ -33,6 +33,29 @@ class ProductHandler {
     return _productList.length;
   }
 
+  Product getProductByName(givenProductName) {
+    String productName;
+    String categoryName;
+    String productDescription;
+    Color productColour;
+
+    // Loop through all products and retrieve the one matching the given name
+    for (Product product in _productList) {
+      if (product.productName == givenProductName) {
+        productName = product.productName;
+        categoryName = product.categoryName;
+        productDescription = product.productDescription;
+        productColour = product.productColour;
+      }
+    }
+
+    return Product(
+        productName: productName,
+        categoryName: categoryName,
+        productDescription: productDescription,
+        productColour: productColour);
+  }
+
   List<Product> getProductsMatchingChosenCategory(chosenCategory) {
     List<Product> returnList = [];
     for (Product product in _productList) {

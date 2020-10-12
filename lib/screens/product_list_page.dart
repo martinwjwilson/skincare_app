@@ -22,6 +22,7 @@ class _ProductListPageState extends State<ProductListPage> {
 
   @override
   Widget build(BuildContext context) {
+    print("The chosen category is: " + chosenCategory);
     // get a list of products to display based on the chosen category
     List<Product> productList =
         ProductHandler().getProductsMatchingChosenCategory(chosenCategory);
@@ -42,7 +43,9 @@ class _ProductListPageState extends State<ProductListPage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return ChosenProjectPage();
+                    return ChosenProjectPage(
+                      chosenProduct: productList[index].productName,
+                    );
                   },
                 ),
               );

@@ -18,7 +18,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
         backgroundColor: Color(0xFFE1BEE7),
         title: Center(child: Text('Skincare App')),
       ),
-      body: new ListView.builder(
+      body: ListView.builder(
         itemCount: CategoryHandler().getCategoryListLength(),
         itemBuilder: (BuildContext ctxt, int index) {
           return new SelectionListCard(
