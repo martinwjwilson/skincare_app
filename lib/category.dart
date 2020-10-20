@@ -12,12 +12,12 @@ class Category {
 
 class CategoryHandler {
   List<Category> _categoryList = [
-    Category(categoryName: 'Category 1', categoryColour: Color(0xFFFFFFCC)),
-    Category(categoryName: 'Category 2', categoryColour: Color(0xFFFFEECC)),
-    Category(categoryName: 'Category 3', categoryColour: Color(0xFFFFDDCC)),
-    Category(categoryName: 'Category 4', categoryColour: Color(0xFFFFCCCC)),
-    Category(categoryName: 'Category 5', categoryColour: Color(0xFFFFBBCC)),
-    Category(categoryName: 'Category 6', categoryColour: Color(0xFFFFAACC))
+    Category(categoryName: 'Cleanser', categoryColour: Color(0xFFFFFFCC)),
+    Category(categoryName: 'Eye Care', categoryColour: Color(0xFFFFEECC)),
+    Category(categoryName: 'Face Mask', categoryColour: Color(0xFFFFDDCC)),
+    Category(categoryName: 'Facial Oil', categoryColour: Color(0xFFFFCCCC)),
+    Category(categoryName: 'Moisturiser', categoryColour: Color(0xFFFFBBCC)),
+    Category(categoryName: 'Toner', categoryColour: Color(0xFFFFAACC))
   ];
 
   String getCategoryName(i) {
