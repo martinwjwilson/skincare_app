@@ -68,34 +68,46 @@ class ProductHandler {
 
   List<Product> _productList = [
     Product(
-        productName: 'Product 1',
-        categoryName: 'Category 1',
-        productDescription: 'Description of product 1 goes in here',
+        productName: 'Angels On Bare Skin',
+        categoryName: 'Cleanser',
+        productDescription:
+            'Lush - 100% natural, this gentle cleanser contains exfoliating ground almonds and calming lavender oil to balance and soothe while effectively cleaning the skin.',
         productColour: Color(0xFFFFFFCC)),
     Product(
-        productName: 'Product 2',
-        categoryName: 'Category 1',
-        productDescription: 'Description of product 2 goes in here',
+        productName: 'Bûche de Noël',
+        categoryName: 'Cleanser',
+        productDescription:
+            'Lush - A Christmas treat for face and body. With creamy Fair Trade organic cocoa butter, almonds and mandarins this will brighten and hydrate skin.',
         productColour: Color(0xFFFFEECC)),
     Product(
-        productName: 'Product 3',
-        categoryName: 'Category 2',
-        productDescription: 'Description of product 3 goes in here',
+        productName: 'Green People - GENTLE CLEANSE & MAKE-UP REMOVER',
+        categoryName: 'Cleanser',
+        productDescription:
+            'Purifying organic cleanser and make-up remover for all skin types',
         productColour: Color(0xFFFFDDCC)),
     Product(
-        productName: 'Product 4',
-        categoryName: 'Category 2',
-        productDescription: 'Description of product 4 goes in here',
+        productName: 'Green People - AGE DEFY+ PURIFY & HYDRATE CREAM CLEANSER',
+        categoryName: 'Cleanser',
+        productDescription:
+            'Revive and refresh the complexion with this hydrating cream cleanser, developed to glide over the skin to gently yet effectively remove light make-up and impurities.',
         productColour: Color(0xFFFFCCCC)),
     Product(
-        productName: 'Product 5',
-        categoryName: 'Category 3',
-        productDescription: 'Description of product 5 goes in here',
+        productName: 'Lush - Tea Tree',
+        categoryName: 'Toner',
+        productDescription:
+            'If your skin could use a little extra TLC, try this powerful yet gentle treatment of tea tree oil and aloe vera. Tea tree is known for its antibacterial and antiseptic properties, and helps to combat the bacteria that causes spots. Aloe vera is kind, cooling and wonderfully gentle on the skin. Drop into a bowl of hot water, releasing the steam to open pores and allow the essential oils to be absorbed.',
         productColour: Color(0xFFFFBBCC)),
     Product(
-        productName: 'Product 6',
-        categoryName: 'Category 4',
-        productDescription: 'Description of product 6 goes in here',
+        productName: 'Breath of Fresh Air',
+        categoryName: 'Toner',
+        productDescription:
+            'This is the most refreshing of all our toner waters, with mineral-rich carrageenan seaweed extract and rose absolute to tone and balance the skin. This is perfect to use as a spritz in the summer to cool down, or any time of year when you want to feel refreshed. Rose absolute will help to reduce redness whilst patchouli oil is cooling and astringent on the skin.',
+        productColour: Color(0xFFFFAACC)),
+    Product(
+        productName: 'Facetheory - CERA-C PORE REDUCING TONER T1',
+        categoryName: 'Toner',
+        productDescription:
+            'A lightweight toner formulated with ceramides and 5% niacinamide (vitamin B3) to balance oil, promote elasticity, and minimise pore size.',
         productColour: Color(0xFFFFAACC))
   ];
 }
