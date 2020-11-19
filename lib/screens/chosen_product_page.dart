@@ -25,7 +25,11 @@ class _ChosenProjectPageState extends State<ChosenProjectPage> {
 
     List<Widget> layoutWidgets = <Widget>[
       Container(
-        color: Colors.blue,
+        decoration: BoxDecoration(
+            border: Border.all(color: Colors.black), color: Colors.black),
+        child: Image(
+          image: AssetImage('images/generic_cream_image.jpg'),
+        ),
         height: 250,
         margin: EdgeInsets.all(10),
       ),
