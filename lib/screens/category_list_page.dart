@@ -18,7 +18,9 @@ class _CategoryListPageState extends State<CategoryListPage> {
         backgroundColor: Color(0xFFE1BEE7),
         title: Center(child: Text('Skincare App')),
       ),
-      body: ListView.builder(
+      body: GridView.builder(
+        gridDelegate:
+            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemCount: CategoryHandler().getCategoryListLength(),
         itemBuilder: (BuildContext ctxt, int index) {
           return new SelectionListCard(
